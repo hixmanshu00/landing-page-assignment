@@ -4,14 +4,16 @@
 
 body{
     color: white;
-    background: linear-gradient(to right, #00031d, #000536);
     background-attachment: fixed;
     max-height: 100vh;
     overflow-y: hidden;
+    background: linear-gradient(to right, #00031d, #000536);
+
 }
 
 .navbar{
     position: relative;
+    z-index: 60;
     display: flex;
     justify-content: space-between;
     max-width: 1140px;
@@ -96,3 +98,88 @@ li:hover{
     top: 200px;
 }
 
+.buttons{
+    position: relative;
+    z-index: 60;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 2s forwards;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(150px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft .5s ease-in-out forwards;
+    
+  }
+
+  .fade-in-left2 {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft .5s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-400px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .loading-container {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #E5EFF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-animation {
+      background-color: transparent;
+    width: 350px;
+    height: 350px;
+  }
+
+  #site-content{
+    display: none;
+    
+  }

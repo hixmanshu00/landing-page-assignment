@@ -10,8 +10,12 @@
      <link rel="icon" type="image/x-icon" href="/images/icon.png">
      <link rel="stylesheet" href="waves.css">
     </head>
-<body>
+<body >
 
+    <div class="loading-container">
+        <img class="loading-animation" src="images/loader.gif" alt="Loading">
+      </div>
+<div id="site-content" >
     <nav>
         <div class="navbar">
             <img src="images/icon.png" alt="icon" id="icon">
@@ -30,16 +34,16 @@
 
         <div class="hero">
             <div class="info-container">
-                <h1 class="heading">
+                <h1 class="heading fade-in-left">
                     Discover. Connect. Collaborate.
                 </h1>
-                <p>An ecosystem for Social media Influencers and Brands.</p>
-                <div class="buttons">
+                <p class="fade-in-left2">An ecosystem for Social media Influencers and Brands.</p>
+                <div class="buttons fade-in-up">
                     <button>I'am an influencer</button>
                     <button>I'am a Brand</button>
                 </div>
             </div>
-            <div class="img-container">
+            <div class="img-container fade-in">
                 <img src="images/hero.png" alt="hero-img">
             </div>
         </div>
@@ -57,7 +61,16 @@
           <div id='stars'></div>
           <div id='stars2'></div>
           <div id='stars3'></div>
+        </div>
     </main>
+    <script>
 
+        setTimeout(function() {
+            var loadingContainer = document.querySelector('.loading-container');
+          loadingContainer.style.display = 'none';
+      document.getElementById('site-content').style.display = 'block';
+    }, 700);
+      </script>
 </body>
+
 </html>
