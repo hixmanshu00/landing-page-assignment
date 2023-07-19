@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freeskout</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="stars.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet">
-     <link rel="icon" type="image/x-icon" href="/images/icon.png">
-     <link rel="stylesheet" href="waves.css">
-    </head>
-<body >
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="waves.css">
+</head>
+
+<body>
 
     <div class="loading-container">
         <img class="loading-animation" src="images/loader.gif" alt="Loading">
-      </div>
-<div id="site-content" >
-    <nav>
-        <div class="navbar">
-            <img src="images/icon.png" alt="icon" id="icon">
-            <div class="nav-links">
-                <ul>
-                    <li>Brands</li>
-                    <li>Influencers</li>
-                    <li>Pricing</li>
-                    <li>Blogs</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-
-        <div class="hero">
-            <div class="info-container">
-                <h1 class="heading fade-in-left">
-                    Discover. Connect. Collaborate.
-                </h1>
-                <p class="fade-in-left2">An ecosystem for Social media Influencers and Brands.</p>
-                <div class="buttons fade-in-up">
-                    <button>I'am an influencer</button>
-                    <button>I'am a Brand</button>
+    </div>
+    <div id="site-content">
+        <nav>
+            <div class="navbar">
+                <img src="images/icon.png" alt="icon" id="icon">
+                <div class="nav-links">
+                    <ul>
+                        <li>Brands</li>
+                        <li>Influencers</li>
+                        <li>Pricing</li>
+                        <li>Blogs</li>
+                        <li>Contact</li>
+                    </ul>
                 </div>
             </div>
-            <div class="img-container fade-in">
-                <img src="images/hero.png" alt="hero-img">
+        </nav>
+        <main>
+
+            <div class="hero">
+                <div class="info-container">
+                    <h1 class="heading fade-in-left">
+                        Discover. Connect. Collaborate.
+                    </h1>
+                    <p class="fade-in-left2">An ecosystem for Social media Influencers and Brands.</p>
+                    <div class="buttons fade-in-up">
+                        <button>I'am an influencer</button>
+                        <button>I'am a Brand</button>
+                    </div>
+                </div>
+                <div class="img-container fade-in">
+                    <img src="images/hero.png" alt="hero-img">
+                </div>
             </div>
-        </div>
-        <div class="waveWrapper waveAnimation">
-            <div class="waveWrapperInner bgTop">
-              <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+
+            <!-- wave animation  -->
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                    <div class="wave waveTop"
+                        style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle"
+                        style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom"
+                        style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                </div>
             </div>
-            <div class="waveWrapperInner bgMiddle">
-              <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-            </div>
-            <div class="waveWrapperInner bgBottom">
-              <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-            </div>
-          </div>
-          <div id='stars'></div>
-          <div id='stars2'></div>
-          <div id='stars3'></div>
-        </div>
+
+            <!-- containers for star animation  -->
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+    </div>
     </main>
     <script>
-
-        setTimeout(function() {
+        // As loading time of this small page is very less, so setTimeout is used to show loader insted of event listener "load"
+        setTimeout(function () {
             var loadingContainer = document.querySelector('.loading-container');
-          loadingContainer.style.display = 'none';
-      document.getElementById('site-content').style.display = 'block';
-    }, 700);
-      </script>
+            loadingContainer.style.display = 'none';
+            document.getElementById('site-content').style.display = 'block';
+        }, 700);
+    </script>
 </body>
 
 </html>
